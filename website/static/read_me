@@ -1,0 +1,11 @@
+# All static assets go in the satic folder
+# (Java files, CSS files)
+
+# to implement place in:
+...
+ <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='index.js') }}
+></script>
+</body>
+</html>

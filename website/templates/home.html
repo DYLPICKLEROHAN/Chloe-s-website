@@ -1,0 +1,21 @@
+{% extends "base.html"%}{% block title %}Home{% endblock %}
+{% block content %}
+<h1 align="center">Reviews</h1>
+<ul class="list-group list-group-flush" id="review">
+    <br />
+    {% for review in user.review %}
+    <li class="list-group-item">
+        {{review.data}}
+        <button type="button" class="close" onClick="delete_review({{ review.id}})">
+            <span aria-hidden="true">&times;</span>
+    </li>
+    {%endfor%}
+</ul>
+<form method="POST">
+    <textarea name="review" id="review" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">ADD Review</button>
+    </div>
+</form>
+{% endblock %}

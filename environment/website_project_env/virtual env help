@@ -1,0 +1,10 @@
+# mkdir __directoryname___
+# python -m virtualenv __envname__
+# grant access with Set-ExecutionPolicy Unrestricted -Scope Process
+#website_project_env\Scripts\activate.ps1
+# $env:FLASK_ENV = "development" 
+# flask run
+
+resources:
+https://github.com/techwithtim/Flask-Web-App-Tutorial/blob/main/website/static/index.js
+https://www.youtube.com/watch?v=dam0GPOAvVI
